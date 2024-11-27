@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Inicial del Paciente</title>
+    <link rel="stylesheet" href="3-EvaluacionInicial.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Evaluación Inicial del Paciente</h1>
+        <form id="evaluationForm">
+            <div class="form-group">
+                <label for="patientName">Nombre del Paciente:</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Ej. Ana López" required>
+            </div>
+            <div class="form-group">
+                <label for="mobility">Movilidad (1-10):</label>
+                <input type="number" id="mobility" name="mobility" min="1" max="10" placeholder="Ej. 8" required>
+            </div>
+            <div class="form-group">
+                <label for="strength">Fuerza (1-10):</label>
+                <input type="number" id="strength" name="strength" min="1" max="10" placeholder="Ej. 6" required>
+            </div>
+            <div class="form-group">
+                <label for="functionalCapacity">Capacidad Funcional (1-10):</label>
+                <input type="number" id="functionalCapacity" name="functionalCapacity" min="1" max="10" placeholder="Ej. 7" required>
+            </div>
+            <div class="form-group">
+                <label for="diagnosis">Diagnóstico:</label>
+                <textarea id="diagnosis" name="diagnosis" rows="4" placeholder="Ej. Dolor lumbar, debilidad muscular en la espalda." required></textarea>
+            </div>
+            <button type="submit" class="btn">Guardar Evaluación</button>
+        </form>
+        <div id="message" class="hidden"></div>
+    </div>
+    <script src="3-EvaluacionInicial.js"></script>
+</body>
+</html>
